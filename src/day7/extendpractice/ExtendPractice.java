@@ -18,4 +18,22 @@ package day7.extendpractice;
 
 * */
 public class ExtendPractice {
+    public static void main(String[] args) {
+        HuaweiPhone hwPhone = new HuaweiPhone("MATE 30","鸿蒙",6.0,884800);
+        IPhone iPhone = new IPhone("IPhone 11","ios11.7",8.5,9974);
+        hwPhone.open();
+        hwPhone.off();
+        hwPhone.watchVideo();
+        hwPhone.call();
+        hwPhone.sendMessage();
+        hwPhone.draw();
+        hwPhone.communicate5G();
+        iPhone.open();
+        iPhone.off();
+        iPhone.watchVideo();
+        iPhone.call();
+        iPhone.sendMessage();
+        iPhone.draw();
+        iPhone.videoEdit();
+    }
 }

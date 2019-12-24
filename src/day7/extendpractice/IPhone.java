@@ -5,16 +5,11 @@ package day7.extendpractice;
 功能：开机  关机  看视频  打电话  发短信  画图  视频编辑
 * */
 public class IPhone extends Phone{
-    String name;
-    String system;
-    int size;
+
     int fingerID;
 
-    public IPhone(String name, String name1, String system, int size, String name2, String system1, int size1, int fingerID) {
-        super(name, name1, system, size);
-        this.name = name2;
-        this.system = system1;
-        this.size = size1;
+    public IPhone(String name,  String system, double size,  int fingerID) {
+        super(name,  system, size);
         this.fingerID = fingerID;
     }
 

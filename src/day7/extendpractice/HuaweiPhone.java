@@ -5,18 +5,18 @@ package day7.extendpractice;
 功能：开机  关机  看视频  打电话  发短信  画图  5G通讯
 * */
 public class HuaweiPhone extends Phone {
-    String name;
-    String system;
-    int size;
     int faceID;
 
-    public HuaweiPhone(String name, String name1, String system, int size, String name2, String system1, int size1, int faceID) {
-        super(name, name1, system, size);
-        this.name = name2;
-        this.system = system1;
-        this.size = size1;
+    public HuaweiPhone(String name,  String system, double size,  int faceID) {
+        super(name, system, size);
         this.faceID = faceID;
     }
+
+    @Override
+    public void open() {
+        System.out.println(name+"开机");
+    }
+
     public void draw(){
         System.out.println("画图");
 
