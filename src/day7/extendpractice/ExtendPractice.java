@@ -22,8 +22,8 @@ public class ExtendPractice {
         HuaweiPhone hwPhone = new HuaweiPhone("MATE 30","鸿蒙",6.0,884800);
         IPhone iPhone = new IPhone("IPhone 11","ios11.7",8.5,9974);
         hwPhone.open();
-       Phone phone =  new Phone("小米","Android 8.0",5.6);
-       HuaweiPhone hw2 = (HuaweiPhone) phone;
-       hw2.off();
+        Phone phone =  new Phone("小米","Android 8.0",5.6);
+        HuaweiPhone hw2 = (HuaweiPhone) phone;
+        System.out.println(hw2.name);
     }
 }
