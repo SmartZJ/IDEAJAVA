@@ -85,15 +85,19 @@ public class ArrayTest {
      [3,  ,  ,  ,  ,  , 8]
 * */
     public static void printSan(int num){
-        int[][]arr = new int[num][];
+        String[][]arr = new String[num][];
         for (int i = 0; i <num ; i++) {
-            arr[i]=new int[i+1];
-            for (int j = 0; j <i+1 ; j++) {
-                arr[i][j]=getRand2();
+            arr[i]=new String[2*i+1];
+            for (int j = 0; j <2*i+1 ; j++) {
+               if(j==0||j==2*i){
+                   arr[i][j]=getRand2()+"";
+               }else {
+                   arr[i][j]=" ";
+               }
             }
         }
         for (int i = 0; i <num ; i++) {
-            for (int j = 0; j <1.5*(num-i) ; j++) {
+            for (int j = 0; j <2*(num-i) ; j++) {
                 System.out.print(" ");
             }
 //            for (int j = 0; j <i+1 ; j++) {
@@ -115,7 +119,7 @@ public class ArrayTest {
     public static void printSan2(int num){
         int[][]arr = new int[num][];
         for (int i = 0; i <num ; i++) {
-            arr[i]=new int[i+1];
+            arr[i]=new int[2*i+1];
             for (int j = 0; j <i+1 ; j++) {
                 arr[i][j]=getRand2();
             }
